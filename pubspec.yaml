@@ -1,0 +1,83 @@
+name: axplay
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line to publish to pub.dev
+
+version: 1.0.0+1
+
+# ------------------------------------------------------------
+# Flutter SDK Environment
+# ------------------------------------------------------------
+environment:
+  sdk: ^3.7.2
+
+# ------------------------------------------------------------
+# Main Dependencies
+# ------------------------------------------------------------
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.4
+
+  # UI & UX Packages
+  video_player: ^2.9.5
+
+  # File and Media Handling
+  video_compress: ^3.1.4
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.0+1
+  photo_manager: ^3.6.4
+  media_store_plus: ^0.1.3
+  device_info_plus: ^11.3.3
+
+  # Splash Screen
+  flutter_native_splash: ^2.4.5
+
+# ------------------------------------------------------------
+# Development Dependencies
+# ------------------------------------------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_oss_licenses: ^3.0.4
+
+# ------------------------------------------------------------
+# Flutter Launcher Icons Configuration
+# ------------------------------------------------------------
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
+  min_sdk_android: 21
+
+# ------------------------------------------------------------
+# Flutter Native Splash Configuration
+# ------------------------------------------------------------
+flutter_native_splash:
+  android_gravity: center
+  color: "#ffffff"
+  image: assets/icons/logo.png
+  color_dark: "#000000"
+  image_dark: assets/icons/logo.png
+
+  android_12:
+    color: "#ffffff"
+    image: assets/icons/logo.png
+    color_dark: "#000000"
+    image_dark: assets/icons/logo.png
+
+  ios: true
+  web: false
+
+# ------------------------------------------------------------
+# Flutter Configuration
+# ------------------------------------------------------------
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/readme/
+    - assets/videos/
