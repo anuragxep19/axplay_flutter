@@ -1,0 +1,113 @@
+# ───────────────────────────────────────────────────────────
+# Core text auto‑normalization (LF in repo, CRLF on Windows checkout)
+# ───────────────────────────────────────────────────────────
+*               text=auto eol=lf
+
+# ───────────────────────────────────────────────────────────
+# Flutter / Dart
+# ───────────────────────────────────────────────────────────
+*.dart          text diff=dart
+.metadata       text
+.flutter-plugins               text
+.flutter-plugins-dependencies  text
+
+# ───────────────────────────────────────────────────────────
+# Build scripts & configs
+# ───────────────────────────────────────────────────────────
+# YAML
+*.yaml          text eol=lf
+*.yml           text eol=lf
+
+# Gradle & Kotlin
+*.gradle        text eol=lf
+*.kts           text eol=lf diff=kotlin
+*.kt            text eol=lf
+
+# Java
+*.java          text eol=lf
+
+# XML, JSON, Markdown, etc.
+*.xml           text eol=lf
+*.json          text eol=lf
+*.md            text eol=lf
+*.txt           text eol=lf
+*.html          text eol=lf
+*.css           text eol=lf
+*.js            text eol=lf
+*.py            text eol=lf
+*.sh            text eol=lf
+*.bash          text eol=lf
+*.zsh           text eol=lf
+
+# pubspec.lock – explicit lockfile normalization
+pubspec.lock    text eol=lf
+
+# ───────────────────────────────────────────────────────────
+# Native / C‑family sources
+# ───────────────────────────────────────────────────────────
+*.c             text eol=lf
+*.h             text eol=lf
+*.cpp           text eol=lf
+*.hpp           text eol=lf
+
+# ───────────────────────────────────────────────────────────
+# Windows scripts & project files (CRLF on checkout)
+# ───────────────────────────────────────────────────────────
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+*.ps1           text eol=crlf
+
+*.rc            text eol=crlf
+*.sln           text eol=crlf
+*.props         text eol=crlf
+*.vcxproj       text eol=crlf
+*.vcxproj.filters text eol=crlf
+
+# Templated versions
+*.sln.tmpl      text eol=crlf
+*.props.tmpl    text eol=crlf
+*.vcxproj.tmpl  text eol=crlf
+
+# ───────────────────────────────────────────────────────────
+# Git LFS – offload huge binaries to LFS rather than Git
+# ───────────────────────────────────────────────────────────
+# Android/iOS artifacts
+*.apk           filter=lfs diff=lfs merge=lfs -text
+*.aab           filter=lfs diff=lfs merge=lfs -text
+*.ipa           filter=lfs diff=lfs merge=lfs -text
+
+# Media (images, audio, video, fonts)
+*.png           filter=lfs diff=lfs merge=lfs -text
+*.jpg           filter=lfs diff=lfs merge=lfs -text
+*.jpeg          filter=lfs diff=lfs merge=lfs -text
+*.gif           filter=lfs diff=lfs merge=lfs -text
+*.webp          filter=lfs diff=lfs merge=lfs -text
+*.ico           filter=lfs diff=lfs merge=lfs -text
+
+*.mp3           filter=lfs diff=lfs merge=lfs -text
+*.mp4           filter=lfs diff=lfs merge=lfs -text
+*.ogg           filter=lfs diff=lfs merge=lfs -text
+
+*.ttf           filter=lfs diff=lfs merge=lfs -text
+*.otf           filter=lfs diff=lfs merge=lfs -text
+*.woff          filter=lfs diff=lfs merge=lfs -text
+*.woff2         filter=lfs diff=lfs merge=lfs -text
+
+*.jar           filter=lfs diff=lfs merge=lfs -text
+*.zip           filter=lfs diff=lfs merge=lfs -text
+*.apk           filter=lfs diff=lfs merge=lfs -text
+*.aab           filter=lfs diff=lfs merge=lfs -text
+*.so            filter=lfs diff=lfs merge=lfs -text
+*.dll           filter=lfs diff=lfs merge=lfs -text
+*.exe           filter=lfs diff=lfs merge=lfs -text
+
+# ───────────────────────────────────────────────────────────
+# IDE & platform bundles (binary blobs – no diff/merge)
+# ───────────────────────────────────────────────────────────
+*.xcassets/**   binary
+*.xcworkspace/** binary
+*.xcuserstate   binary
+
+# ───────────────────────────────────────────────────────────
+# End of file
+# ───────────────────────────────────────────────────────────
