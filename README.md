@@ -30,8 +30,8 @@ This project was developed as part of my personal learning journey to explore Fl
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/anuragep19/axplay-flutter.git
-   cd axplay-flutter
+   git clone https://github.com/anuragxep19/axplay_flutter.git
+   cd axplay_flutter
    ```
 
 1. **Install dependencies**:
@@ -163,6 +163,6 @@ axplay-flutter/
 ## Author
 
 **Anurag E P**  
-[GitHub: @anuragep19](https://github.com/anuragep19)  
+[GitHub: @anuragxep19](https://github.com/anuragxep19)  
 
 ---
